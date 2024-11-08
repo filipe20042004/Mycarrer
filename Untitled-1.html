@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Carreira - Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de Carreira para Jovens Talentos</h1>
+        <p>Uma plataforma para registrar e acompanhar o desenvolvimento dos jogadores de futebol.</p>
+    </header>
+    <main>
+        <section id="cadastro">
+            <h2>Cadastro do Jogador</h2>
+            <form id="playerForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+                
+                <label for="posicao">Posição:</label>
+                <input type="text" id="posicao" name="posicao" required>
+                
+                <label for="estatisticas">Estatísticas (Gols, Assistências, etc.):</label>
+                <input type="text" id="estatisticas" name="estatisticas" required>
+                
+                <label for="objetivos">Objetivos e Conquistas:</label>
+                <textarea id="objetivos" name="objetivos" rows="4" required></textarea>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section id="playersList">
+            <h2>Lista de Jogadores Registrados</h2>
+            <ul id="playerData">
+                <!-- Dados dos jogadores serão exibidos aqui -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
